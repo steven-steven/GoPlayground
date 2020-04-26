@@ -7,19 +7,19 @@ import (
 	"encoding/xml"
 )
 
-type Users struct {
+type Users_2 struct {
 	XMLName xml.Name `xml:"users"`	//name of this tag
-	Users   []User   `xml:"user"`		//tags that it contain
+	Users   []User_2   `xml:"user"`		//tags that it contain
 }
 
-type User struct {
+type User_2 struct {
 	XMLName xml.Name `xml:"user"`	//name of this tag
 	Type    string   `xml:"type,attr"`	//attribute of <User>, with name type
 	Name    string   `xml:"name"`	//contains a tag <name>
-	Social  Social   `xml:"social"`	//contains a tag <social>
+	Social  Social_2   `xml:"social"`	//contains a tag <social>
 }
 
-type Social struct {
+type Social_2 struct {
 	XMLName  xml.Name `xml:"social"`
 	Facebook string   `xml:"facebook"`
 	Twitter  string   `xml:"twitter"`
@@ -28,7 +28,7 @@ type Social struct {
 
 func ReadXML(){
 	// Open our xmlFile
-	xmlFile, err := os.Open("users.xml")
+	xmlFile, err := os.Open("parsing/users.xml")
 	if err != nil {
 			fmt.Println(err)
 	}
@@ -38,7 +38,7 @@ func ReadXML(){
 	// io.reader to []byte
 	byteValue, _ := ioutil.ReadAll(xmlFile)
 
-	var users Users
+	var users Users_2
 	xml.Unmarshal(byteValue, &users)
 
 	//iterate through users

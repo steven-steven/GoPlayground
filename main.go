@@ -1,10 +1,16 @@
 package main
 import (
 	"fmt"
-	"github.com/steven-steven/GoPlayground/consoleInput"
+	_ "github.com/steven-steven/GoPlayground/consoleInput"
+	_ "github.com/steven-steven/GoPlayground/parsing"
+	"github.com/steven-steven/GoPlayground/sorting"
 )
 
 func main(){
 	fmt.Println("Hello World")
-	consoleinput.ReadInput()
+	//consoleinput.ReadInput()
+	//parsing.ReadJson()
+	//parsing.ReadXML()
+	sorting.Sort()
+	sorting.CustomSort()
 }

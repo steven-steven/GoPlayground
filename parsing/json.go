@@ -27,7 +27,7 @@ type Social struct {
 func ReadJson(){
 	//open file -> convert to a byte array -> unmarshal json to struct
 	// Open our jsonFile (io.Reader)
-	jsonFile, err := os.Open("users.json")
+	jsonFile, err := os.Open("parsing/users.json")
 	if err != nil {
 			fmt.Println(err)
 	}
