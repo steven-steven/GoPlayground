@@ -5,7 +5,8 @@ import (
 	_ "github.com/steven-steven/GoPlayground/parsing"
 	_ "github.com/steven-steven/GoPlayground/sorting"
 	_ "github.com/steven-steven/GoPlayground/tickers"
-	"github.com/steven-steven/GoPlayground/datastructure"
+	_ "github.com/steven-steven/GoPlayground/datastructure"
+	"github.com/steven-steven/GoPlayground/mutex"
 )
 
 func main(){
@@ -22,5 +23,7 @@ func main(){
 	// go tickers.IntervalPrint()	//run in the background
 	// select{}	//so main program runs indefinitely. Otherwise it will stop before first tick
 
-	datastructure.linkedList()
+	// datastructure.TraverseLL()
+
+	
 }
