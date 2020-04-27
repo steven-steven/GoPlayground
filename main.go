@@ -6,7 +6,7 @@ import (
 	_ "github.com/steven-steven/GoPlayground/sorting"
 	_ "github.com/steven-steven/GoPlayground/tickers"
 	_ "github.com/steven-steven/GoPlayground/datastructure"
-	"github.com/steven-steven/GoPlayground/mutex"
+	"github.com/steven-steven/GoPlayground/concurrency"
 )
 
 func main(){
@@ -25,5 +25,5 @@ func main(){
 
 	// datastructure.TraverseLL()
 
-	
+	concurrency.TestMutex()
 }
