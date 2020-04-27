@@ -25,5 +25,6 @@ func main(){
 
 	// datastructure.TraverseLL()
 
-	concurrency.TestMutex()
+	//concurrency.TestMutex()
+	concurrency.TestChannel()
 }
