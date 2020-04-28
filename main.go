@@ -6,7 +6,9 @@ import (
 	_ "github.com/steven-steven/GoPlayground/sorting"
 	_ "github.com/steven-steven/GoPlayground/tickers"
 	_ "github.com/steven-steven/GoPlayground/datastructure"
-	"github.com/steven-steven/GoPlayground/concurrency"
+	_ "github.com/steven-steven/GoPlayground/concurrency"
+	_ "github.com/steven-steven/GoPlayground/filesystem"
+	"github.com/steven-steven/GoPlayground/graphql"
 )
 
 func main(){
@@ -26,5 +28,10 @@ func main(){
 	// datastructure.TraverseLL()
 
 	//concurrency.TestMutex()
-	concurrency.TestChannel()
+	//concurrency.TestChannel()
+
+	// filesystem.GenerateTempFiles()
+	// filesystem.UploadFile()
+
+	graphql.CreateServer()
 }
