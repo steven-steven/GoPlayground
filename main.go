@@ -8,7 +8,8 @@ import (
 	_ "github.com/steven-steven/GoPlayground/datastructure"
 	_ "github.com/steven-steven/GoPlayground/concurrency"
 	_ "github.com/steven-steven/GoPlayground/filesystem"
-	"github.com/steven-steven/GoPlayground/graphql"
+	_ "github.com/steven-steven/GoPlayground/graphql"
+	"github.com/steven-steven/GoPlayground/restapi"
 )
 
 func main(){
@@ -33,5 +34,7 @@ func main(){
 	// filesystem.GenerateTempFiles()
 	// filesystem.UploadFile()
 
-	graphql.CreateServer()
+	//graphql.SampleServer1()
+	//graphql.SampleServer2()
+	//graphql.Test()
 }
